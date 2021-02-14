@@ -1,4 +1,4 @@
-## Welcome to Raghav's ECE 3400 Documentation
+## This website has nothing to do with Bitcoin. It has everything to do with ECE 3400!
 
 You can use the [editor on GitHub](https://github.com/raghav2956/ECE3400/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
