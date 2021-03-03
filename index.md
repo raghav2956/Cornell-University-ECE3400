@@ -13,8 +13,12 @@ as her brains. Other things involved ->
    significance of the reference voltage, the sampling rate and the resolution.
 
 ## Toto at Birth
-
 ![](https://github.com/raghav2956/Cornell-University-ECE3400/blob/gh-pages/Toto-Frame.png)
+
+## Toto's Eyes
+![](https://github.com/raghav2956/Cornell-University-ECE3400/blob/gh-pages/Toto-Eyes.png)
+
+
 
 ```markdown
 Syntax highlighted code block
