@@ -1,6 +1,6 @@
-## This website has nothing to do with Bitcoin. It has everything to do with ECE 3400!
+The Life of of my Robot
 
-You can use the [editor on GitHub](https://github.com/raghav2956/ECE3400/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
