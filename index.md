@@ -14,7 +14,8 @@ as her brains. Other things involved ->
 
 ## Toto at Birth
 
-![alt text](https://github.com/raghav2956/Cornell-University-ECE3400/Toto Frame.png)
+Inline-style: 
+![alt text](https://github.com/raghav2956/Cornell-University-ECE3400/Toto-Frame.png)
 
 ```markdown
 Syntax highlighted code block
