@@ -1,12 +1,20 @@
-### The Life of of my Robot in pictures and some text
+### The Life of of my Robot (Toto) in Pictures and some Text
 
 To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Week 1
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In week 1, we put together Toto's structural frame and got familiar with the Arduino, the microncontroller that is supposed to act
+as her brains. Other things involved ->
+
+1. Getting familiar with the Photoresistors that would act as Toto's 'eyes'.
+2. Playing around with the Analog to Digital converter on the arduino to read the values off the photoresistors. We talked about the 
+   significance of the reference voltage, the sampling rate and the resolution.
+
+## Toto at Birth
+
+![alt text](https://github.com/raghav2956/Cornell-University-ECE3400/Toto Frame.png)
 
 ```markdown
 Syntax highlighted code block
