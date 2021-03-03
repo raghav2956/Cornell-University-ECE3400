@@ -1,4 +1,4 @@
-The Life of of my Robot
+### The Life of of my Robot in pictures and some text
 
 To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
 
