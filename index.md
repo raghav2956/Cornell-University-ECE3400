@@ -16,7 +16,7 @@ as her brains. Other things involved ->
 ![](https://github.com/raghav2956/Cornell-University-ECE3400/blob/gh-pages/Toto-Frame.png)
 
 ## Toto's Eyes
-![](https://github.com/raghav2956/Cornell-University-ECE3400/blob/gh-pages/Toto-Eyes.png)
+![](https://github.com/raghav2956/Cornell-University-ECE3400/blob/gh-pages/Toto-Eyes.jpg)
 
 
 
