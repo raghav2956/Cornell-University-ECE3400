@@ -1,4 +1,4 @@
-### The Life of of my Robot (Toto) in Pictures and some Text
+### The Life of of my Robot (Toto) 
 
 To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
 
