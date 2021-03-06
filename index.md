@@ -1,11 +1,11 @@
-### The Life of of my Robot (Toto) 
+# The Life of of my Robot (Toto) 
 
 To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
 
 
-### Week 1
+# Week 1
 
-# Overview
+### Overview
 In week 1, we put together Toto's structural frame and got familiar with the Arduino, the microncontroller that is supposed to act
 as her brains. Other things involved ->
 
@@ -13,7 +13,7 @@ as her brains. Other things involved ->
 2. Playing around with the Analog to Digital converter on the arduino to read the values off the photoresistors. We talked about the 
    significance of the reference voltage, the sampling rate and the resolution.
 
-# Challenges
+### Challenges
 1. It was a little challenging to figure out how to use the photoresistors. We had to dig into the datasheet, make a voltage divider
    circuit and test the sensors out before using it as Toto's eyes.
 2. It was fun to understand, in more detail, how the ADC on the Arduino works and what happens behind the scenes when we do an 
