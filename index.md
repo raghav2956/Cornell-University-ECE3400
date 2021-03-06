@@ -1,5 +1,5 @@
-# The Life of of my Robot 
-### Her name is TOTO
+# The Life of of my Robot -- TOTO
+
 
 To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
 
