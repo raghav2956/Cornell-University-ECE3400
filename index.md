@@ -33,4 +33,9 @@ providing an analog measurement on the basis of which the motors will be control
 
 ![](Toto-Eyes.png)
 
+# Week 2
+
+### Overview 
+In week 2, I substantially increased the functionality of Toto's life. 
+
 
