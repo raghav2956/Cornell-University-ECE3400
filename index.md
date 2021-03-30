@@ -45,6 +45,11 @@ he is confused (lights are dim) and following the light when it hits either of h
 3. Tinkering around to understand the PWM signal from the Arduino (functionality, syntax and values) that would control the motors via the H-Bridge. 
    I had to try several values of the PWM pins to figure out what made TOTO rotate, go in a straight line, etc.
 
+## H-Bridge Circuit 
+The internal circuit looks messy but hey, did you think your human biology is any simpler ?! I am playing god here.
+
+![](Toto-Legs-Control.png)
+
 
 ## Toto Reacts to Light
 To watch Toto in action click [here](https://youtu.be/HeyBRctOXM4)
