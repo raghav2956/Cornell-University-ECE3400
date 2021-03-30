@@ -24,7 +24,7 @@ as her brains. Other things involved ->
 There is an aluminium frame which has two DC motors as wheels. The batteries will eventually power the Arduino and the motors -- seperate
 power has been provided since the motors will consume a non-trivial amount of power. The breadboard on top will house all the circuitry.
 
-![](Toto-Frame.png)
+![](Photos/Toto-Frame.png)
 
 
 ## Toto's Eyes
