@@ -1,7 +1,7 @@
 # The Life of of my Robot -- TOTO
 
 
-To check out the code, head over to my repository on [GitHub](https://github.com/raghav2956/Cornell-University-ECE3400)
+To check out the website on Github, head over to my repository on [here](https://github.com/raghav2956/Cornell-University-ECE3400)
 
 
 # Week 1
