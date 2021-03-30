@@ -47,7 +47,6 @@ he is confused (lights are dim) and following the light when it hits either of h
 
 ## H-Bridge Circuit 
 The internal circuit looks messy but hey, did you think your human biology is any simpler ?! I am playing god here.
-
 ![](Toto-Legs-Control.png)
 
 
