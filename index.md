@@ -46,3 +46,6 @@ he is confused (lights are dim) and following the light when it hits either of h
    I had to try several values of the PWM pins to figure out what made TOTO rotate, go in a straight line, etc.
 
 
+## Toto Reacts to Light
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/HeyBRctOXM4/0.jpg)](http://www.youtube.com/watch?v=HeyBRctOXM4 "Video Title")
