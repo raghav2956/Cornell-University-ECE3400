@@ -47,5 +47,6 @@ he is confused (lights are dim) and following the light when it hits either of h
 
 
 ## Toto Reacts to Light
+Click the image below to see the circuit in action!!
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/HeyBRctOXM4/0.jpg)](http://www.youtube.com/watch?v=HeyBRctOXM4 "Video Title")
+[![](Toto-Legs-Control.png)](http://www.youtube.com/watch?v=HeyBRctOXM4 "Video Title")
