@@ -24,14 +24,14 @@ as her brains. Other things involved ->
 There is an aluminium frame which has two DC motors as wheels. The batteries will eventually power the Arduino and the motors -- seperate
 power has been provided since the motors will consume a non-trivial amount of power. The breadboard on top will house all the circuitry.
 
-![](Photos/Toto-Frame.png)
+![](Toto-Frame.png)
 
 
 ## Toto's Eyes
 A not-so-pretty prototype of the 'vision' of the robot. The two photoresistors on either side respond to light by changing their resistance, 
 providing an analog measurement on the basis of which the motors will be controlled.  
 
-![](Photos/Toto-Eyes.png)
+![](Toto-Eyes.png)
 
 # Week 2
 
@@ -48,7 +48,7 @@ he is confused (lights are dim) and following the light when it hits either of h
 ## H-Bridge Circuit 
 The internal circuit looks messy but hey, did you think your human biology is any simpler ?! I am playing god here.
 
-![](Photos/Toto-Legs-Control.png)
+![](Toto-Legs-Control.png)
 
 
 ## Toto Reacts to Light
