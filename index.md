@@ -74,7 +74,7 @@ In week 1, we first learnt how to use LTSpice to simulate electrical circuits an
    I, particularly, had issues with finding the right analog pin declaration. For example, AIN3 on the arduino pinout is actually mapped to PORTD.PIN0CTRL instead      of PORTD.PIN3CTRL. This confused me for a while.
    
 ## Week 2 Overview
-Week 2 was praticularly heavy because we had a lot of subtasks in the same week. To begin with, we first improved the microphone circuit by adding an LM358 op-amp amplifier. Upon amplification, the 500 Hz peak became much clearer like so ->
+Week 2 was praticularly heavy because we had a lot of subtasks in the same week. To begin with, we first improved the microphone circuit by adding an LM358 op-amp amplifier. Upon amplification, the 500 Hz peak became much clearer but the peak was a little shifted ahead of the 500Hz mark like so ->
 
 ![](Photos/Improved_uphone_image.jpg)
 
@@ -89,6 +89,15 @@ Here are two plot depicting the superimposition of the expected behaviour of the
 ![](Photos/HP_Superposition_Final.jpg)
 
 As you can see, while the y-axis scales are different, there is a general trend that both, the theoretical and experimental data show. The delta magnitude is around 3dB in the experimental data as it ranges from 500Hz to 1KHz.
+
+Finally, we were required to build a bandpass filter that, theoretically, attenuated frequencies below 500Hz and above 1KHz. The hope was that all the noise around the signal of interest would be eliminated to a great extent using the bandpass filter, however, that didn't quite happen since the bandpass filter, itself, was not spared from the perils of surrounding noise and the low quality of the op-amps used. The LTSpice simulations for the Bandpass filter looked like so ->
+
+## BandPass Filter LTSpice Schematic
+![](Photos/Band-Pass-Circuit.png)
+
+## Bode Plot for BandPass Filter
+![](Photos/Band-Pass-Bode.png)
+
 
 
 
