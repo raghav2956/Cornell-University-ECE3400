@@ -69,10 +69,26 @@ In week 1, we first learnt how to use LTSpice to simulate electrical circuits an
 
 ### Week 1 Challenges
 1. One of the foremost challenges in using the microphone circuit was that our microphone was not of a very high quality and picked up a lot of noise along with
-   the sound signal. Due to this the spectrum obtained was very noisy and one had to really zoom in to find the peak at 500 Hz.
+   the sound signal. There were many reasons for this noise -- 1/f noise, the 60Hz flickering noise from electronic applicances and finally the current flowing        through the wires on the breadboard itself. Due to this the spectrum obtained was very noisy and one had to really zoom in to find the peak at 500 Hz. We also      had to turn up the laptop volume to its highest and keep the microphone really close to the speakers
 2. Setting up the ADC in freerun mode was also a bit tricky because one had to get familir with the ADC documentation in order to correctly set the ADC registers.
    I, particularly, had issues with finding the right analog pin declaration. For example, AIN3 on the arduino pinout is actually mapped to PORTD.PIN0CTRL instead      of PORTD.PIN3CTRL. This confused me for a while.
    
 ## Week 2 Overview
-Week 2 was praticularly heavy because we had a lot of subtasks in the same week. To begin with, we 
+Week 2 was praticularly heavy because we had a lot of subtasks in the same week. To begin with, we first improved the microphone circuit by adding an LM358 op-amp amplifier. Upon amplification, the 500 Hz peak became much clearer like so ->
+
+![](Photos/Improved_uphone_img.jpg)
+
+Once the output from the microphone was amplified, we were tasked with passing the output through a low pass and high pass filter seperately. The goal was implement and observe the bhaviour of a real life filter as it is applied on an incoming sound signal and to then observe the implications on the Fourier Spectrum. Unfortunately the filters didn't behave as expected (due to the noise, again) and hence we could only approximate the effects of the filter on the actual signal. 
+
+Here are two plot depicting the superimposition of the expected behaviour of the filter (obtained from the Bode Plot) and the real behaviour on the 500Hz sound signal. This is all plotted in Matlab. The LTSpice data (magnitude and phase) is first imported into a google sheet, cleaned and then read via Matlab. To observe the data, we zoomed in around the 500 Hz - 1K Hz mark since that is our frequency of interest. 
+
+Low Pass superimposition
+![](Photos/LP-Superposition-Final.jpg)
+
+High Pass superimposition
+![](Photos/HP_Superposition_Final.jpg)
+
+As you can see, while the y-axis scales are different, there is a general trend that both, the theoretical and experimental data show. 
+
+
 
