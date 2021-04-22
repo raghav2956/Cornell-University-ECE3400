@@ -31,7 +31,7 @@ power has been provided since the motors will consume a non-trivial amount of po
 A not-so-pretty prototype of the 'vision' of the robot. The two photoresistors on either side respond to light by changing their resistance, 
 providing an analog measurement on the basis of which the motors will be controlled.  
 
-![](Toto-Eyes.png)
+![](Photos/Toto-Eyes.png)
 
 # Week 2
 
@@ -47,7 +47,7 @@ he is confused (lights are dim) and following the light when it hits either of h
 
 ## H-Bridge Circuit 
 The internal circuit looks messy but hey, did you think your human biology is any simpler ?! I am playing god here.
-![](Toto-Legs-Control.png)
+![](Photos/Toto-Legs-Control.png)
 
 
 ## Toto Reacts to Light
