@@ -103,6 +103,6 @@ Upon actually implementing the bandpass filter, we encountered the same issues w
 ### Band Pass superimposition
 ![](Photos/bp_superposition_final.jpg)
 
-
+### Week 2 Challenges
 
 
