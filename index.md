@@ -4,7 +4,7 @@
 To check out the website on Github, head over to my repository on [here](https://github.com/raghav2956/Cornell-University-ECE3400)
 
 
-# Week 1
+# Lab 1
 
 ### Overview
 In week 1, we put together Toto's structural frame and got familiar with the Arduino, the microncontroller that is supposed to act
@@ -33,7 +33,7 @@ providing an analog measurement on the basis of which the motors will be control
 
 ![](Photos/Toto-Eyes.png)
 
-# Week 2
+# Lab 2
 
 ### Overview 
 In week 2, I substantially increased the functionality of Toto's life. He can move now and respond to light -- rotating in position if there 
@@ -53,4 +53,26 @@ The internal circuit looks messy but hey, did you think your human biology is an
 ## Toto Reacts to Light
 To watch Toto in action click [here](https://youtu.be/HeyBRctOXM4)
 
+# Lab 3
+Considering Lab 3 was a significantly longer lab, it was divided into three 1 week modules. The weekly tasks were less daunting to tackle and allowed us to
+stay on track to finish the whole lab by the deadline.
+
+## Week 1 Overview
+In week 1, we first learnt how to use LTSpice to simulate electrical circuits and model their characteristics. We simulted a low pass and a high pass filter, obtained their Bode Plots and found their cutoff frequencies. We were then tasked with building a microphone circuit that could listen for and transmit auditory data (specifically a note of 500 Hz) into the Arduino. Using the on board Analog to Digitial Converter, we sampled the incoming analog data, discretized it and transmitted it to Matlab. Using Matlab, we performed a Fourier transformation on the Arduino data and obtained a freqeuncy spectrum, which when plotted, yielded a peak at the note originally played. 
+
+### Bode Plot for Low Pass Filter
+![](Photos/Low-Pass-Bode.png)
+
+### Bode Plot for High Pass Filter
+![](Photos/High-Pass-Bode.png)
+
+
+### Week 1 Challenges
+1. One of the foremost challenges in using the microphone circuit was that our microphone was not of a very high quality and picked up a lot of noise along with
+   the sound signal. Due to this the spectrum obtained was very noisy and one had to really zoom in to find the peak at 500 Hz.
+2. Setting up the ADC in freerun mode was also a bit tricky because one had to get familir with the ADC documentation in order to correctly set the ADC registers.
+   I, particularly, had issues with finding the right analog pin declaration. For example, AIN3 on the arduino pinout is actually mapped to PORTD.PIN0CTRL instead      of PORTD.PIN3CTRL. This confused me for a while.
+   
+## Week 2 Overview
+Week 2 was praticularly heavy because we had a lot of subtasks in the same week. To begin with, we 
 
