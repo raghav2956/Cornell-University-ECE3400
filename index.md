@@ -98,6 +98,11 @@ Finally, we were required to build a bandpass filter that, theoretically, attenu
 ## Bode Plot for BandPass Filter
 ![](Photos/Band-Pass-Bode.png)
 
+Upon actually implementing the bandpass filter, we encountered the same issues we faced with the low and high pass filters. 1/f noise, 60Hz flicker noise and other current induced noise on the breadboard led to less than ideal results and at most, we could observe a rough similiarity between theory and actual experiment.
+
+### Band Pass superimposition
+![](Photos/bp_superposition_final.jpg)
+
 
 
 
