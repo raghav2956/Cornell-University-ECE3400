@@ -108,4 +108,21 @@ Upon actually implementing the bandpass filter, we encountered the same issues w
 2. The main challenges on the software side were related to the experimental frequency output out of the bandpass filter. Due to the various noise sources (close      proximity wires, 1/f noise, 60Hz flickering noise), the observed output out of the low-pass, high-pass and bandpass filters was nowhere close to the                experimental results. I tried multiple things -- different positions for the circuit relative to the computer speakers, different lengths of time for which the    sound played, different frequencies etc -- in order to get close to simulation results but the above pictures are the best approximation I could manage. 
 
 ## Week 3 Overview
-In week 3, we were tasked with shifting all the Matlab FFT processing to the Arduino. We also bypassed the filtering in order to eliminate all the noise sources that affect the sound signal as it travels from the microphone to the filters to the Arduino and finally to Matlab. We used a FFT library made for the Arduino and used an ISR to read values off the ADC buffer. Essentially, we instantiated a 256 element array that got filled with ADC samples as soon as the Arduino reset. A timer set to overflow every 0x19 ticks (with main clock frequency = 0x19 and a prescaler of 256) ensured that the ISR read a sample every 0.41667 seconds which then became our sampling period. I also made sure to store the register values for the ADC before changing it to **free-run mode** because that way, when in the future I need to go from reading the ADC to reading the photoresistors, I will not lose the ADC register values that enable me to read the photoresi
+In week 3, we were tasked with shifting all the Matlab FFT processing to the Arduino. We also bypassed the filtering in order to eliminate all the noise sources that affect the sound signal as it travels from the microphone to the filters to the Arduino and finally to Matlab. We used a FFT library made for the Arduino and used an ISR to read values off the ADC buffer. Essentially, we instantiated a 256 element array that got filled with ADC samples as soon as the Arduino reset. A timer set to overflow every 0x19 ticks (with main clock frequency = 0x19 and a prescaler of 256) ensured that the ISR read a sample every 0.41667 seconds which then became our sampling period. I also made sure to store the register values for the ADC before changing it to **free-run mode** because that way, when in the future I need to go from reading the ADC to reading the photoresistors, I will not lose the ADC register values that enable me to read the photoresistors. 
+
+Finally, once the 256 element array was full, like earlier labs, I shifted the ADC values down by 512 and stored them in a 16 bit short to go from unsigned to signed ADC values. This was done because the FFT library needs to have analog signals oscillating around 0 while the raw ADC values go from 0 to 1024. In the last step, I stored the 256 elements in a new array called _fft_input_ where the odd indices held 0 (imaginary part of the signal) and the even indices held the corresponding shifted and signed ADC value (real part of the signal). This was done since the FFT library needs such an array to do the fft processing.  
+
+Below are the frequency spectrum images for certain frequencies ->
+
+### 500 Hz
+![](Photos/500.png)
+
+### 700 Hz
+![](Photos/700.png)
+
+### 900 Hz
+![](Photos/900.png)
+
+### Week 3 Challenges
+1. Because Prof. Poitras allowed us to bypass the filters for the final part of lab, there were no considerable hardware challenges in Week 3. The main challenges related to the software, whereby we had to intelligently code the setup, loop and ISR part of the sketch. I, personally, found an interesting challenge in figuring out the timer overflow value for the TCA timer because it involved understanding the math behind a properly functioing ISR. I had to dig into the TCA datasheet and understand a few things -- how the TCA prescaler affects the overflow calculation, what certain code lines mean etc. 
+
