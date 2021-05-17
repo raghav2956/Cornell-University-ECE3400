@@ -126,3 +126,16 @@ Below are the frequency spectrum images for certain frequencies ->
 ### Week 3 Challenges
 1. Because Prof. Poitras allowed us to bypass the filters for the final part of lab, there were no considerable hardware challenges in Week 3. The main challenges related to the software, whereby we had to intelligently code the setup, loop and ISR part of the sketch. I, personally, found an interesting challenge in figuring out the timer overflow value for the TCA timer because it involved understanding the math behind a properly functioing ISR. I had to dig into the TCA datasheet and understand a few things -- how the TCA prescaler affects the overflow calculation, what certain code lines mean etc. 
 
+
+## Week 4 Overview
+Week 4 was our final week as configured our robots to perform two demos that required us to put together all that we had learned over the semester. In addition to leveraging our past skills, we also learned how to use an ultrasonic sensor that was deployed for obstacle detection. 
+
+### Demo 1
+For the first demo, the robot had to continuosly run the FFT algorithm before detecting a 550Hz frequency that we played to it. The tricky part was that the robot had to seperate this frequency out from a couple different frequencies. This was done by checking the appropriate bins the final FFT output array. Once the 550Hz frequency was detected, the robot turned in place, recognizing two obstacles that were kept around it. As soon as it recognized these obstacles, the onboard LED was supposed to go on and the robot was required to stop after one complete rotation. 
+
+Demo 1
+https://youtu.be/1Hbusb-XvLs
+
+
+### Demo 2
+https://youtu.be/QEZMhMHqUf8
