@@ -134,7 +134,7 @@ Week 4 was our final week as configured our robots to perform two demos that req
 For the first demo, the robot had to continuosly run the FFT algorithm before detecting a 550Hz frequency that we played to it. The tricky part was that the robot had to seperate this frequency out from a couple different frequencies. This was done by checking the appropriate bins the final FFT output array. Once the 550Hz frequency was detected, the robot turned in place, recognizing two obstacles that were kept around it. As soon as it recognized these obstacles, the onboard LED went on and the robot was required to stop after one complete rotation. 
 
 ## Demo 1 Video
-![](https://youtu.be/1Hbusb-XvLs)
+To watch Demo 2 click [here](https://youtu.be/1Hbusb-XvLs)
 
 ## Demo 1 Challenges
 1. The main challenge in Demo 1 was to continously run the FFT algorithm and subsequently alter the main loop control flow in order to skip the FFT algorithm once the desired frequency was detected. 
@@ -148,7 +148,7 @@ Demo 2 was far more challenging. Here, our robots were supposed to navigate thro
 3.When facing the third obstacle, the onboard LED should be on.
 
 ### Demo 2
-![](https://youtu.be/QEZMhMHqUf8)
+To watch Demo 2 click [here](https://youtu.be/QEZMhMHqUf8)
 
 ## Demo 2 Challenges
 1. Demo 2 was tricky because the rules mentioned above meant that I had to make different code blocks/control flow for each obstacle. It was also hard to keep track of the obstacles because the ultrasonic sensor would not allow to simply update a counter for each obstacle. Hence, I had to use a complex combination of flags to keep track of the obstacles and accordingly run different code blocks for different code blocks. 
