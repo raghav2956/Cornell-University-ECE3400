@@ -1,4 +1,4 @@
-# The Life of of my Robot -- Pablita
+# The Life of my Robot -- Pablita
 
 
 To check out the website on Github, head over to my repository on [here](https://github.com/raghav2956/Cornell-University-ECE3400)
