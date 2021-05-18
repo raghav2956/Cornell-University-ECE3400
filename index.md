@@ -130,12 +130,26 @@ Below are the frequency spectrum images for certain frequencies ->
 ## Week 4 Overview
 Week 4 was our final week as configured our robots to perform two demos that required us to put together all that we had learned over the semester. In addition to leveraging our past skills, we also learned how to use an ultrasonic sensor that was deployed for obstacle detection. 
 
-### Demo 1
-For the first demo, the robot had to continuosly run the FFT algorithm before detecting a 550Hz frequency that we played to it. The tricky part was that the robot had to seperate this frequency out from a couple different frequencies. This was done by checking the appropriate bins the final FFT output array. Once the 550Hz frequency was detected, the robot turned in place, recognizing two obstacles that were kept around it. As soon as it recognized these obstacles, the onboard LED was supposed to go on and the robot was required to stop after one complete rotation. 
+### Demo 1 Overview
+For the first demo, the robot had to continuosly run the FFT algorithm before detecting a 550Hz frequency that we played to it. The tricky part was that the robot had to seperate this frequency out from a couple different frequencies. This was done by checking the appropriate bins the final FFT output array. Once the 550Hz frequency was detected, the robot turned in place, recognizing two obstacles that were kept around it. As soon as it recognized these obstacles, the onboard LED went on and the robot was required to stop after one complete rotation. 
 
-Demo 1
-https://youtu.be/1Hbusb-XvLs
+## Demo 1 Video
+![](https://youtu.be/1Hbusb-XvLs)
 
+## Demo 1 Challenges
+1. The main challenge in Demo 1 was to continously run the FFT algorithm and subsequently alter the main loop control flow in order to skip the FFT algorithm once the desired frequency was detected. 
+2. While we were suggested to use the millis() and micros() functions to aid with control flow, I preferred to use flags to do the same. This required some further brainstorming. 
+
+### Demo 2 Overview
+Demo 2 was far more challenging. Here, our robots were supposed to navigate through a basic maze, avoiding certain obstacles and performing some other sequential functions. Via the photosensors, our robot relied on a light source to navigate through the maze and was supposed to contain logic which would prevent it from bumping into the obstacles. The main challenges in this demo came from the rules that our robot was supposed to obey -->
+
+1.When facing the first obstacle, the onboard LED should be on and if light is shined on the left side of the robot, the robot should not move. 
+2.When facing the second obstacle, the onboard LED should be off.
+3.When facing the third obstacle, the onboard LED should be on.
 
 ### Demo 2
-https://youtu.be/QEZMhMHqUf8
+![](https://youtu.be/QEZMhMHqUf8)
+
+## Demo 2 Challenges
+1. Demo 2 was tricky because the rules mentioned above meant that I had to make different code blocks/control flow for each obstacle. It was also hard to keep track of the obstacles because the ultrasonic sensor would not allow to simply update a counter for each obstacle. Hence, I had to use a complex combination of flags to keep track of the obstacles and accordingly run different code blocks for different code blocks. 
+
